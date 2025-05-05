@@ -442,13 +442,10 @@ if __name__ == "__main__":
     df_4g.to_excel('dados_2204.xlsx', index=False)
     combined_df = pd.concat([df_4g, df_5g], ignore_index=True)
     combined_df = combined_df.drop_duplicates()
-    #combined_df = combined_df[(combined_df['Date'] >= '2025-03-22 12:00:00') & (combined_df['Date'] <= '2025-03-22 21:00:00')]
-    # Generate report
+# Generate report
     report = ReportGenerator(
         combined_df,
         output_path='report_GARANHUNS_MAI25.pdf',
         groups=list(combined_df['Grupo'].unique())
     )
     report.generate_report()
-
-    df_4g['Cell'] == '4G-CE05CW-26-1A'
