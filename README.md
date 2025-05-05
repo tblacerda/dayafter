@@ -71,4 +71,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Author
 
-Developed by [Your Name].
+Developed by Tiago Beltrão Lacerda
